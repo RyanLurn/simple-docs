@@ -30,6 +30,8 @@ const components: MDXComponents = {
       {children}
     </h6>
   ),
+  // Paragraph
+  p: ({ children }) => <p className="leading-7 not-first:mt-6">{children}</p>,
 };
 
 export function useMDXComponents(): MDXComponents {
