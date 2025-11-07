@@ -54,6 +54,8 @@ const components: MDXComponents = {
       {children}
     </Link>
   ),
+  // Strikethrough
+  del: ({ children }) => <del className="line-through">{children}</del>,
 };
 
 export function useMDXComponents(): MDXComponents {
