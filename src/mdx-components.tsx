@@ -32,6 +32,10 @@ const components: MDXComponents = {
   ),
   // Paragraph
   p: ({ children }) => <p className="leading-7 not-first:mt-6">{children}</p>,
+  // Blockquote
+  blockquote: ({ children }) => (
+    <blockquote className="mt-6 border-l-2 pl-6 italic">{children}</blockquote>
+  ),
 };
 
 export function useMDXComponents(): MDXComponents {
