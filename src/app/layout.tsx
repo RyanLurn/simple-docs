@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Simple Docs",
-  description: "A simple documentation site template with a focus on simplicity",
+  description:
+    "A simple documentation site template with a focus on simplicity",
 };
 
 export default function RootLayout({
