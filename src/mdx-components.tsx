@@ -1,5 +1,6 @@
 import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const components: MDXComponents = {
   // headings
@@ -82,6 +83,12 @@ const components: MDXComponents = {
     <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
       {children}
     </td>
+  ),
+  // Code block
+  pre: ({ children, className, ...props }) => (
+    <pre className={cn("rounded-lg p-4", className)} {...props}>
+      {children}
+    </pre>
   ),
   // Inline code
   // code: ({ children }) => (
