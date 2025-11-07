@@ -43,6 +43,10 @@ const components: MDXComponents = {
   ol: ({ children }) => (
     <ol className="my-6 ml-6 list-decimal [&>li]:mt-2">{children}</ol>
   ),
+  // Emphasis
+  em: ({ children }) => <em className="italic">{children}</em>,
+  // Strong
+  strong: ({ children }) => <strong className="font-bold">{children}</strong>,
 };
 
 export function useMDXComponents(): MDXComponents {
