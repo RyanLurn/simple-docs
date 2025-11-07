@@ -1,5 +1,7 @@
 ### Mock page for testing code syntax highlighting
 
+Inline code: `console.log("Hello, world!"){:js}`
+
 **HTML:**
 ```html
 <!DOCTYPE html>
