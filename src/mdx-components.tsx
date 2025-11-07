@@ -56,6 +56,23 @@ const components: MDXComponents = {
   ),
   // Strikethrough
   del: ({ children }) => <del className="line-through">{children}</del>,
+  // Table
+  table: ({ children }) => (
+    <table className="w-full table-auto md:table-fixed">{children}</table>
+  ),
+  tr: ({ children }) => (
+    <tr className="even:bg-muted m-0 border-t p-0">{children}</tr>
+  ),
+  th: ({ children }) => (
+    <th className="border px-4 py-2 text-left font-bold [[align=center]]:text-center [[align=right]]:text-right">
+      {children}
+    </th>
+  ),
+  td: ({ children }) => (
+    <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
+      {children}
+    </td>
+  ),
 };
 
 export function useMDXComponents(): MDXComponents {
