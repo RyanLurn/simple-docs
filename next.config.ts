@@ -18,7 +18,6 @@ const shikiOptions: RehypeShikiOptions = {
     "shellscript",
   ],
   themes: { light: "github-light", dark: "github-dark" },
-  inline: "tailing-curly-colon",
 };
 
 const nextConfig: NextConfig = {
