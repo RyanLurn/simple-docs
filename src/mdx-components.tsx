@@ -49,11 +49,21 @@ const components: MDXComponents = {
   // Strong
   strong: ({ children }) => <strong className="font-bold">{children}</strong>,
   // Link
-  a: ({ children, href }) => (
-    <Link className="underline cursor-pointer" href={href}>
-      {children}
-    </Link>
-  ),
+  a: ({ children, href }) => {
+    if (!href) {
+      return (
+        // biome-ignore lint/a11y/useValidAnchor: default fallback
+        <a className="underline cursor-pointer" href="#">
+          {children}
+        </a>
+      );
+    }
+    return (
+      <Link className="underline cursor-pointer" href={href}>
+        {children}
+      </Link>
+    );
+  },
   // Strikethrough
   del: ({ children }) => <del className="line-through">{children}</del>,
   // Table
