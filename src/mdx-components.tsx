@@ -58,7 +58,7 @@ const components: MDXComponents = {
   del: ({ children }) => <del className="line-through">{children}</del>,
   // Table
   table: ({ children }) => (
-    <table className="w-full table-auto md:table-fixed">{children}</table>
+    <table className="table-auto md:table-fixed">{children}</table>
   ),
   tr: ({ children }) => (
     <tr className="even:bg-muted m-0 border-t p-0">{children}</tr>
