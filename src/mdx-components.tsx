@@ -1,4 +1,5 @@
 import type { MDXComponents } from "mdx/types";
+import Link from "next/link";
 
 const components: MDXComponents = {
   // headings
@@ -47,6 +48,12 @@ const components: MDXComponents = {
   em: ({ children }) => <em className="italic">{children}</em>,
   // Strong
   strong: ({ children }) => <strong className="font-bold">{children}</strong>,
+  // Link
+  a: ({ children, href }) => (
+    <Link className="underline cursor-pointer" href={href}>
+      {children}
+    </Link>
+  ),
 };
 
 export function useMDXComponents(): MDXComponents {
