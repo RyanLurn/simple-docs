@@ -7,7 +7,7 @@ function Header({ className, ...props }: ComponentProps<"header">) {
   return (
     <header
       className={cn(
-        "sticky flex top-0 w-full items-center justify-between px-4 py-2",
+        "sticky flex top-0 w-full bg-background items-center justify-between px-4 py-2",
         className
       )}
       {...props}
