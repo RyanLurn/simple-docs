@@ -1,4 +1,4 @@
-import { NavLink } from "@/components/header/nav-link";
+import { NavLink } from "@/components/nav-link";
 
 function Navbar() {
   return (
