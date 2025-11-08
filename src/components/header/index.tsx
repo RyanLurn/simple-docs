@@ -1,4 +1,5 @@
 import type { ComponentProps } from "react";
+import { Navbar } from "@/components/header/navbar";
 import { ModeToggle } from "@/components/mode-toggle";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +13,7 @@ function Header({ className, ...props }: ComponentProps<"header">) {
       {...props}
     >
       <h1 className="text-xl font-bold">Simple Docs</h1>
+      <Navbar />
       <ModeToggle />
     </header>
   );
