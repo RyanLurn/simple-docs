@@ -6,7 +6,7 @@ export default function DocsLayout({ children }: LayoutProps<"/docs">) {
     <div className="flex size-full">
       <Sidebar />
       <Separator orientation="vertical" />
-      <main className="flex-1 p-8">{children}</main>
+      <main className="flex-1 p-8 overflow-y-auto">{children}</main>
     </div>
   );
 }
